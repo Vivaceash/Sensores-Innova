@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Control Trampa ESP32</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Trampa Insectos - Sensores</h1>
+  <div id="sensores">
+    <p>Temperatura: <span id="temp">--</span> °C</p>
+    <p>Humedad: <span id="hum">--</span> %</p>
+    <p>Presión: <span id="presion">--</span> hPa</p>
+    <p>Altitud: <span id="altitud">--</span> m</p>
+    <p>Fecha: <span id="fecha">--</span></p>
+    <p>Hora: <span id="hora">--</span></p>
+  </div>
+
+  <h2>Control LED RGB</h2>
+  <button class="btn azul" onclick="cambiarPreset(1)">Azul</button>
+  <button class="btn rojo" onclick="cambiarPreset(2)">Rojo</button>
+  <button class="btn verde" onclick="cambiarPreset(3)">Verde</button>
+  <button class="btn apagar" onclick="cambiarPreset(0)">Apagar</button>
+  
+  <script src="script.js"></script>
+</body>
+</html>

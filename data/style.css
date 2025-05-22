@@ -1,0 +1,121 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  user-select: none;
+}
+
+body {
+  background-color: #121212;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  text-shadow: 0 0 5px #3f51b5;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #b0bec5;
+  text-align: center;
+}
+
+.sensores {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+  width: 320px;
+  max-width: 90vw;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sensores p {
+  font-size: 1.1rem;
+  margin: 0.4rem 0;
+  letter-spacing: 0.02em;
+  color: #ccc;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0.7rem 1.6rem;
+  margin: 0.4rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.25s ease, transform 0.15s ease;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  color: #fff;
+  min-width: 110px;
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px 2px #3f51b5;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Colores específicos para cada botón */
+.btn.azul {
+  background-color: #2196f3;
+  box-shadow: 0 4px 15px #2196f3aa;
+}
+.btn.azul:hover {
+  background-color: #1976d2;
+}
+
+.btn.rojo {
+  background-color: #e53935;
+  box-shadow: 0 4px 15px #e53935aa;
+}
+.btn.rojo:hover {
+  background-color: #b71c1c;
+}
+
+.btn.verde {
+  background-color: #43a047;
+  box-shadow: 0 4px 15px #43a047aa;
+}
+.btn.verde:hover {
+  background-color: #2e7d32;
+}
+
+.btn.apagar {
+  background-color: #000;
+  box-shadow: 0 4px 15px #000000aa;
+  color: #fff;
+}
+.btn.apagar:hover {
+  background-color: #333;
+}
+
+
+/* Responsive: en pantallas pequeñas, los botones se ajustan */
+
+@media (max-width: 360px) {
+  button {
+    min-width: 80px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin: 0.3rem 0.2rem;
+  }
+}
